@@ -4974,9 +4974,9 @@ textarea {
 }
 .black-image-project-hover img {
   -webkit-filter: contrast(200%) grayscale(100%);
-  -webkit-transition: all 0.1s linear;
-  -o-transition: all 0.1s linear;
-  transition: all 0.1s linear;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   filter: none;
 }
 .black-image-project-hover img:hover {
