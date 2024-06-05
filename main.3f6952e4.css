@@ -4974,13 +4974,13 @@ textarea {
 }
 .black-image-project-hover img {
   -webkit-filter: contrast(200%) grayscale(100%);
-  filter: contrast(200%) grayscale(100%);
   -webkit-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear;
+  filter: none;
 }
 .black-image-project-hover img:hover {
-  filter: none;
+  filter: contrast(200%) grayscale(100%);
 }
 @media (max-width: 992px) {
   .black-image-project-hover img {
