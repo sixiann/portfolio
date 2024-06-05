@@ -289,7 +289,9 @@ class StarField {
         this.mouseMoved = false;
         this.mouseMoving = false;
         this.mouseControlAlpha = 0.1;
-        this.showMouseControls = true;
+        // this.showMouseControls = true;
+        this.showMouseControls = false;
+
         this.pauseAnimation = false;
         // just the initial render, doesn't start the loop
         this.render();
@@ -437,9 +439,7 @@ class StarField {
             this.play();
         }, 200);
     }
-    handleOrientation(event) {
-        // TODO: uh, implement this lol
-    }
+    
 }
 function setup() {
     let canvas = document.getElementById('canvas');
@@ -447,18 +447,6 @@ function setup() {
     if (IS_MOBILE)
         howManyStars = 500;
     let starfield = new StarField(howManyStars, canvas);
-    starfield.startRenderLoop();
-    let UIToggleButton = document.getElementById('ui-button');
-    UIToggleButton.addEventListener('click', (e) => {
-        starfield.showMouseControls = !starfield.showMouseControls;
-        if (starfield.showMouseControls) {
-            starfield.mouseControlAlpha = 0.3;
-            UIToggleButton.classList.remove('off');
-        }
-        else {
-            UIToggleButton.classList.add('off');
-        }
-        e.preventDefault();
-    }, true);
+    starfield.startRenderLoop();    
 }
 window.onload = setup();
