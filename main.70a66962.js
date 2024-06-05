@@ -493,7 +493,7 @@
     });
   },
   "4FPD": function (t, e, n) {
-    t.exports = n.p + "assets/apple-icon-180x180.png";
+    t.exports = n.p + "assets/apple-touch-icon.png";
   },
   "4hhi": function (t, e, n) {
     t.exports = n.p + "assets/images/profil.jpg";
